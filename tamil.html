@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MindPulse – Emotional Well-Being Analytics</title>
+    <link rel="stylesheet" href="arasi.css">
+</head>
+<body>
+
+<header class="hero">
+    <h1>🌈 MindPulse</h1>
+    <p>Your personal emotional well-being companion</p>
+</header>
+
+<main class="container">
+
+    <section class="card glow">
+        <h2>🧠 Daily Emotional Check-In</h2>
+        <p class="subtitle">Take a moment to reflect on how you feel today</p>
+
+        <label>How is your mood?</label>
+        <select id="mood">
+            <option value="">Select mood</option>
+            <option value="happy">😊 Happy</option>
+            <option value="neutral">😐 Neutral</option>
+            <option value="sad">😔 Sad</option>
+            <option value="stressed">😫 Stressed</option>
+        </select>
+
+        <label>Your energy level</label>
+        <select id="energy">
+            <option value="">Select energy</option>
+            <option value="high">⚡ High</option>
+            <option value="medium">🔋 Medium</option>
+            <option value="low">🪫 Low</option>
+        </select>
+
+        <button onclick="saveEntry()">✨ Analyze & Save</button>
+        <div id="result" class="output"></div>
+    </section>
+
+    <section class="card">
+        <h2>📊 Emotional Insights</h2>
+        <p class="subtitle">Understand your emotional patterns over time</p>
+
+        <button class="secondary" onclick="generateSummary()">View My Summary</button>
+        <div id="summary" class="output"></div>
+    </section>
+    <section class="card">
+    <h2>🗓 Emotional History</h2>
+    <p class="subtitle">Manage your past emotional check-ins</p>
+
+    <div style="display:flex; gap:10px;">
+        <button class="secondary" onclick="showHistory()">View History</button>
+        <button style="background:#ef4444" onclick="clearHistory()">Clear All</button>
+    </div>
+
+    <div id="history" class="output"></div>
+</section>
+
+
+
+</main>
+
+<footer>
+    <p>💙 This tool supports self-reflection and is not a medical diagnosis.</p>
+    <p>Created as a student mental well-being project</p>
+</footer>
+
+<script src="name.js"></script>
+</body>
+</html>
